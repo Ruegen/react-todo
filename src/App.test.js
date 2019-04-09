@@ -29,5 +29,11 @@ describe("Component: AppComponent", () => {
     expect(link.text()).toBe('github repo')
   })
 
+  it('should have a link to brand img', () => {
+    const img = wrapper.find('img.brand')
+    expect(img.props().src).toBe('logo.svg')
+    expect(img.props().alt).toBe('brand')
+  })
+
   
 })
